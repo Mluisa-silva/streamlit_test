@@ -3,10 +3,8 @@ import pandas as pd
 import streamlit as st
 import google.generativeai as genai
 
-# Configura a API key do Gemini corretamente para a versão instalada
-#api_key = st.secrets("API_KEY")
-#genai.configure(api_key=api_key)
-genai.configure(api_key="AIzaSyB459Gb7FRpjnZj4dxzjdZWybgBuOyeE3c")
+api_key = st.secrets("API_KEY")
+genai.configure(api_key=api_key)
 
 try:
     # Utilizando o modelo especificado
